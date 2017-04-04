@@ -1,0 +1,19 @@
+.contact-info{
+  width: 200px;
+
+  .contact-info-icon{
+    background-color: #b52929;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  .contact-info-icon-text{
+    color: white;
+    position: relative;
+  }
+
+  .contact-info-phone-text{
+    font-size: 18px;
+    color: #575757;
+  }
+}

@@ -33,9 +33,9 @@
     <![endif]-->
     <!-- Add your site or application content here -->
     <div layout="column" flex role="main">
-        <!--<toolbar flex='none'></toolbar>-->
-        <ui-view flex layout="column" class="md-default-theme"></ui-view>
-        <footer flex='none' layout="column"></footer>
+        <toolbar flex='none' layout='row'></toolbar>-->
+        <ui-view flex layout="row"></ui-view>
+        <footer flex='none' layout="row"></footer>
     </div>
 
 
@@ -85,7 +85,9 @@
     <script src="components/auth/auth.service.js"></script>
     <script src="components/auth/interceptor.service.js"></script>
     <script src="components/auth/router.decorator.js"></script>
-    <script src="components/footer/footer.directive.js"></script>
+    <script src="components/contact-info/contact-info.component.js"></script>
+    <script src="components/footer/footer.component.js"></script>
+    <script src="components/toolbar/toolbar.directive.js"></script>
     <script src="components/util/util.service.js"></script>
     <!-- endinjector -->
     <!-- endbuild -->

@@ -56,6 +56,10 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 @import 'main/main';
 
+@import '../components/contact-info/contact-info';
+
 @import '../components/footer/footer';
+
+@import '../components/toolbar/toolbar';
 
 /* endinject */
