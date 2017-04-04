@@ -4,6 +4,30 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 /**
  * App-wide Styles
  */
+ @font-face {
+     font-family: MyriadProItalic;
+     src: url('assets/fonts/MyriadPro-It.otf');
+}
+
+
+@font-face {
+    font-family: MyriadProRegular;
+    src: url('assets/fonts/MyriadPro-Regular.otf');
+}
+
+
+@font-face {
+    font-family: MyriadProBold;
+    src: url('assets/fonts/MyriadPro-Bold.otf');
+}
+
+
+
+@font-face {
+    font-family: MyriadProBoldCond;
+    src: url('assets/fonts/MyriadPro-BoldCond.otf');
+}
+
 
 $font-lato: 'Lato',
 sans-serif;
