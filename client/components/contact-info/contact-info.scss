@@ -1,19 +1,28 @@
-.contact-info{
-  width: 200px;
-
-  .contact-info-icon{
+.contact-info {
+  .contact-info-icon {
     background-color: #b52929;
-    padding: 10px;
     border-radius: 50%;
-    margin: 10px;
   }
-  .contact-info-icon-text{
+
+  .contact-info-icon-text {
     color: white;
     position: relative;
   }
 
-  .contact-info-phone-text{
-    font-size: 18px;
+  .contact-info-phone-text {
     color: #575757;
+
+    .prefix {
+      font-style: italic;
+      padding-right: 4px;
+      font-size: 12px;
+      padding: 3px 2px;
+    }
+
+    .phone {
+      font-size: 18px;
+      font-weight: bold;
+      font-style: italic;
+    }
   }
 }

@@ -1,7 +1,13 @@
-.contact-info(layout='row')
-  .contact-info-icon(flex='20') 
-     md-icon.material-icons.contact-info-icon-text {{ $ctrl.icon }}
+.contact-info(layout-padding layout="row" layout-align="center center")
+  .contact-info-icon
+      md-icon.material-icons.contact-info-icon-text {{ $ctrl.icon }}
   .contact-info-phone-text(flex='80')
-    div(layout='row') {{ $ctrl.phone1 }}
-    div(layout='row') {{ $ctrl.phone2 }}
-    div(layout='row') {{ $ctrl.phone3 }}
+    div(layout='row') 
+        span.prefix (31) 
+        span.phone {{ $ctrl.phone1 }}
+    div(layout='row') 
+        span.prefix (31) 
+        span.phone {{ $ctrl.phone2 }}
+    div(layout='row') 
+        span.prefix (31) 
+        span.phone {{ $ctrl.phone3 }}

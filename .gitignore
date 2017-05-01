@@ -30,3 +30,4 @@ migration/node_modules
 /packages/Microsoft.Net.Compilers.1.0.0/tools/VBCSCompiler.exe.config
 /packages/Microsoft.Net.Compilers.1.0.0/tools/csc.exe
 /packages/Microsoft.Net.Compilers.1.0.0/tools/vbc.exe
+/.vs/baseWebapp/v14/.suo

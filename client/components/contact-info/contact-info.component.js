@@ -1,7 +1,7 @@
 'use strict';
 
-(function () {
-    class ContactInfoController {
+(function() {
+  class ContactInfoController {
 
     constructor() {
 
