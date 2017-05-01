@@ -18,6 +18,6 @@ angular.module('webapp', [
     $translateProvider.translations('pt', appConfig.I18N.pt);
     $translateProvider.preferredLanguage('pt');
     $mdThemingProvider.theme('default')
-      .primaryPalette('blue')
-      .warnPalette('orange');
+      .primaryPalette('grey')
+      .warnPalette('red');
   });
