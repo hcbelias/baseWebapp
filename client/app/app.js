@@ -19,5 +19,5 @@ angular.module('webapp', [
     $translateProvider.preferredLanguage('pt');
     $mdThemingProvider.theme('default')
       .primaryPalette('grey')
-      .warnPalette('red');
+      .warnPalette('orange');
   });

@@ -1,4 +1,13 @@
-md-toolbar.md-toolbar {  
-  background-color: black;
-  color: red;
+toolbar {
+    .md-toolbar-tools {
+        background-color: $grey;
+        h2{
+            color: white;
+            background-color: red;
+        }
+
+        i.material-icons{
+            color: white;
+        }
+    }
 }

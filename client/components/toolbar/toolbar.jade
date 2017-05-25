@@ -1,4 +1,9 @@
 md-toolbar.md-toolbar(md-scroll-shrink='')
-  .md-toolbar-tools(layout-align='center center' layout-align-gt-sm='start center')
-    img(src="assets/img/logo-56px.png")
-  
+  .md-toolbar-tools(layout-align='center center')
+    h2(flex='', md-truncate='') {{ $ctrl.title }} 
+    md-nav-bar(flex='' md-selected-nav-item='currentNavItem', nav-bar-aria-label='navigation links')
+      md-nav-item(md-nav-click="goto('page1')", name='page1') Page One
+      md-nav-item(md-nav-click="goto('page2')", name='page2') Page Two
+      md-nav-item(md-nav-click="goto('page3')", name='page3') Page Three
+    md-button.md-button.md-ink-ripple
+      i.material-icons menu

@@ -1,12 +1,16 @@
 $fa-font-path: "../bower_components/font-awesome/fonts";
+$red: #b52929;
+$grey: #575757;
+$font-lato: 'Lato', sans-serif;
+
 @import '../bower_components/font-awesome/scss/font-awesome';
 
 /**
  * App-wide Styles
  */
- @font-face {
-     font-family: MyriadProItalic;
-     src: url('assets/fonts/MyriadPro-It.otf');
+@font-face {
+    font-family: MyriadProItalic;
+    src: url('assets/fonts/MyriadPro-It.otf');
 }
 
 
@@ -27,15 +31,6 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
     font-family: MyriadProBoldCond;
     src: url('assets/fonts/MyriadPro-BoldCond.otf');
 }
-
-
-$font-lato: 'Lato',
-sans-serif;
-
-/* Angular-Material Override */
-
-$formColor: rgb(63, 81, 181);
-$inputColor: #424242;
 
 
 /* Media Queries */
