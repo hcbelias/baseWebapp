@@ -1,10 +1,13 @@
 md-toolbar.md-toolbar(md-scroll-shrink='')
-  .md-toolbar-tools(flex)
+  div.degrade(layout='row')
+  .md-toolbar-tools(layout="row" layout-align="center center")
     div.title-container.inset
       h2 {{ $ctrl.title }} 
-    md-nav-bar.md-warn(flex='' md-selected-nav-item='currentNavItem', nav-bar-aria-label='navigation links' hide-xs='')
+    md-nav-bar.md-warn(flex='' md-selected-nav-item='currentNavItem', nav-bar-aria-label='navigation links' hide show-gt-sm='')
       md-nav-item.md-warn(md-nav-click="goto('page1')", name='page1') Page One
       md-nav-item(md-nav-click="goto('page2')", name='page2') Page Two
       md-nav-item(md-nav-click="goto('page3')", name='page3') Page Three
-    md-button.md-button.md-ink-ripple
+    md-button.md-button.md-ink-ripple(show hide-gt-xs='')
       i.inset.material-icons menu
+  div.degrade(layout='row')
+   
