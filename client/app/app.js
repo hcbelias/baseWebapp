@@ -9,14 +9,10 @@ angular.module('webapp', [
     'validation.match',
     'ngMaterial',
     'ngMessages',
-    'pascalprecht.translate'
 ])
-  .config(function ($urlRouterProvider, $locationProvider, $translateProvider, $mdThemingProvider, appConfig) {
+  .config(function ($urlRouterProvider, $locationProvider, $mdThemingProvider) {
     $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
-    $translateProvider.useSanitizeValueStrategy('sanitize');
-    $translateProvider.translations('pt', appConfig.I18N.pt);
-    $translateProvider.preferredLanguage('pt');
     $mdThemingProvider.theme('default')
       .primaryPalette('grey')
       .warnPalette('orange');

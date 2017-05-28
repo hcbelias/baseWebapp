@@ -1,13 +1,13 @@
 footer {
-  text-align: center;
-  border-left: 10px solid $red;
-  border-right: 10px solid $grey;
+    text-align: center;
 
-  .address-container {
-    .address {
-      color: $grey;
-      font-size: 18px;
-      font-weight: bold;
+    .address-container {
+        padding: 10px 5px;
+
+        .address {
+            color: $grey;
+            font-size: 18px;
+            font-weight: bold;
+        }
     }
-  }
 }
