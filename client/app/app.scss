@@ -1,6 +1,6 @@
 $fa-font-path: "../bower_components/font-awesome/fonts";
 $red: #b52929;
-$grey: #575757;
+$grey: rgb(42, 38, 39);
 $font-lato: 'Lato', sans-serif;
 
 @import '../bower_components/font-awesome/scss/font-awesome';
@@ -66,4 +66,16 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     background: linear-gradient(to left, $grey, $red); /* Standard syntax (must be last) */
     height: 10px;
     width: 100%;
+    z-index: 999;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content{
+    max-width: 1200px;
+    margin : auto;
 }

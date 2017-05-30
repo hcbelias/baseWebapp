@@ -5,10 +5,12 @@
   class ToolbarController {
 
     constructor($mdSidenav, $stateParams) {
-      this.title = 'Advocacia Terra Moreira';
+      this.title = 'Terra Moreira';
       this.toggleLeft = this.buildToggler('left');
       this.toggleRight = this.buildToggler('right');
       this.navbar = this.getNavbar();
+
+      this.image = 'assets/img/cartao.jpg';
     }
 
     getNavbar() {

@@ -32,13 +32,13 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <!-- Add your site or application content here -->
-  <div layout="column" flex role="main">
-    <toolbar layout="row"></toolbar>
-    <ui-view flex layout="row"></ui-view>
-    <div class="degrade">    </div>
-
-    <footer layout="column" layout-gt-sm="row"></footer>
-
+  <div layout="column" flex role="main" >
+    <toolbar flex layout="row"></toolbar>
+    <md-content>
+      <ui-view flex layout="row" class="content"></ui-view>
+      <div class="degrade">    </div>
+      <footer layout="column" flex layout-gt-sm="row" class="content"></footer>
+    </md-content>
 
   </div>
 

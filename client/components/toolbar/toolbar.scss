@@ -2,9 +2,16 @@ $toolbarColor: white;
 $toolbarBackgroundColor: black;
 
 toolbar {
-    .md-toolbar-tools {
+    .md-toolbar {
         background-color: $toolbarBackgroundColor;
+    }
+
+    .md-toolbar-tools {
         color: $toolbarColor;
+
+        img {
+            width: 120px;
+        }
 
         md-nav-bar {
             ul {

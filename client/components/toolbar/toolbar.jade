@@ -1,11 +1,9 @@
 md-toolbar.md-toolbar(md-scroll-shrink='')
   .degrade(layout='row')
-  .md-toolbar-tools(layout="row" layout-align="space-between center")
-    div.title-container.inset
-      h2 {{ $ctrl.title }} ç
+  .md-toolbar-tools.content(layout="row" layout-align="space-between center")
+    img.md-card-image(ng-src='{{$ctrl.image}}', alt='Advocacia Terra Moreira')
     md-nav-bar.md-warn(flex='' md-selected-nav-item='currentNavItem', nav-bar-aria-label='navigation links' hide show-gt-sm='')
       md-nav-item( ng-repeat='item in $ctrl.navbar' md-nav-click="goto('page1')", name='page1') {{item.title}}
-      md-button
-        i.inset.material-icons menu
+    md-button
+      i.inset.material-icons menu
   .degrade(layout='row')
-  div( ng-repeat='item in $ctrl.navbar' md-nav-click="goto('page1')", name='page1') {{item.title}}

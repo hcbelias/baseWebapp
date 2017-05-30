@@ -4,6 +4,7 @@
     class MainController {
 
     constructor() {
+      this.image = 'assets/img/piece.jpg';
     }
 
   }
