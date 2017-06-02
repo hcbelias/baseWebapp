@@ -1,6 +1,36 @@
+$space-content: 30px;
+$screen-division: $large-and-up;
+
 .home-page {
     .main-content {
         background-color: $grey;
         color: white;
+    }
+
+    .content-divider {
+        background-color: black;
+        @media #{$screen-division} {
+            margin-bottom: $space-content;
+        }
+    }
+
+    .image-background {
+        @media #{$screen-division} {
+            padding-bottom: $space-content;
+            padding-top: $space-content;
+        }
+
+        background-color: white;
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: $space-content;
+
+        md-toolbar {
+            background-color: $grey;
+            color: white;
+            padding-left: 20px;
+        }
     }
 }

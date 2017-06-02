@@ -1,7 +1,10 @@
 $toolbarColor: white;
 $toolbarBackgroundColor: black;
 
-toolbar {
+.toolbar {
+    z-index: 9999;
+    min-height: 56px;
+
     .md-toolbar {
         background-color: $toolbarBackgroundColor;
     }

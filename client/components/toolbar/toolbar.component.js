@@ -19,9 +19,6 @@
           title: 'Home'
         },
         {
-          title: 'Quem Somos'
-        },
-        {
           title: 'Áreas de Atuação'
         },
         {

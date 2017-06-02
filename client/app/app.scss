@@ -78,4 +78,9 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 .content{
     max-width: 1200px;
     margin : auto;
+    width: 100%;    
+}
+
+.view-background{
+    background-color: rgba(40, 38, 39, 0.76);
 }

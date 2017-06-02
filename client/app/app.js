@@ -15,5 +15,6 @@ angular.module('webapp', [
     $locationProvider.html5Mode(true);
     $mdThemingProvider.theme('default')
       .primaryPalette('grey')
-      .warnPalette('orange');
+      .warnPalette('deep-orange')
+      .accentPalette('red');
   });
