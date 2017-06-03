@@ -1,5 +1,6 @@
 $fa-font-path: "../bower_components/font-awesome/fonts";
 $red: #b52929;
+$dark-red: #a53636;
 $grey: rgb(42, 38, 39);
 $font-lato: 'Lato', sans-serif;
 
@@ -52,6 +53,8 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 @import 'main/main';
 
 @import '../components/contact-info/contact-info';
+
+@import '../components/contact/contact';
 
 @import '../components/footer/footer';
 

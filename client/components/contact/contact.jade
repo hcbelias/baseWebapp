@@ -1,0 +1,22 @@
+md-card.content.card.md-whiteframe-20dp.contact-card
+  md-toolbar
+    md-toolbar-tools
+      span.md-headline Entre em contato conosco!
+  md-card-content
+    div(layout="column" layout-gt-xs="row" layout-align="center center")
+      md-input-container
+        label Nome
+        input(ng-model="$ctrl.name" required)
+      md-input-container
+        label Telefone
+        input(ng-model="$ctrl.phone", type="phone")
+      md-input-container
+        label E-mail
+        input(ng-model="$ctrl.email", type="email")
+    form(name='contact-form')
+      md-input-container(flex='50')
+        md-icon(md-font-icon='icon-home')
+        label Nome
+        input(required='', name='clientName', ng-model='$ctrl.clientName')
+        div(ng-messages='contact-form.clientName.$error')
+            div(ng-message='required') This is required.

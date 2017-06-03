@@ -8,9 +8,9 @@ $screen-division: $large-and-up;
     }
 
     .content-divider {
-        background-color: black;
-        @media #{$screen-division} {
-            margin-bottom: $space-content;
+        background-color: $grey;
+        &.accent-color{
+            background-color: $dark-red;
         }
     }
 
@@ -33,4 +33,15 @@ $screen-division: $large-and-up;
             padding-left: 20px;
         }
     }
+
+    .contact{
+        background-color: $dark-red;
+        padding-top: $space-content;
+    }
+
+    .card-section{
+        background-color: rgba(191, 190, 190, 0.61);
+        padding-top: $space-content;
+    }
 }
+
