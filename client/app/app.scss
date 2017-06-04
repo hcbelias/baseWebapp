@@ -62,11 +62,8 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 /* endinject */
 
-.degrade {
-    background: -webkit-linear-gradient(right,$grey, $red); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, $grey, $red); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, $grey, $red); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to left, $grey, $red); /* Standard syntax (must be last) */
+.degrade {   
+    background-color: $dark-red;
     height: 10px;
     width: 100%;
     z-index: 999;

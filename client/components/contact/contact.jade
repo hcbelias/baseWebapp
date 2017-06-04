@@ -1,7 +1,7 @@
 md-card.content.card.md-whiteframe-20dp.contact-card
   md-toolbar
     md-toolbar-tools
-      span.md-headline Entre em contato conosco!
+      span.md-headline Entre em contato conosco, ou se preferir, nos contate pelo facebook!
   md-card-content
     div(layout="column" layout-gt-xs="row" layout-align="center center")
       md-input-container
@@ -20,3 +20,6 @@ md-card.content.card.md-whiteframe-20dp.contact-card
         input(required='', name='clientName', ng-model='$ctrl.clientName')
         div(ng-messages='contact-form.clientName.$error')
             div(ng-message='required') This is required.
+  md-toolbar
+    md-toolbar-tools
+      span.md-headline Ou nos encontre no facebook! 

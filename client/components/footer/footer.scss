@@ -2,13 +2,17 @@ footer {
     text-align: center;
     background-color: white;
 
+    .footer-text {
+        color: $grey;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
     .address-container {
         padding: 10px 5px;
+    }
 
-        .address {
-            color: $grey;
-            font-size: 18px;
-            font-weight: bold;
-        }
+    .md-button.footer-contact-icon {
+        background-color: $dark-red;
     }
 }

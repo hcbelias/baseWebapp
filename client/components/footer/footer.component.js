@@ -3,8 +3,13 @@
 (function () {
     class FooterController {
 
-    constructor() {
+      constructor($window) {
+        this.window = $window;
     }
+
+      openFacebook() {
+        this.window.open("https://www.facebook.com/advterramoreira/", "_blank");
+      }
 
   }
 
