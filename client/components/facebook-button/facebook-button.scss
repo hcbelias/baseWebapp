@@ -1,0 +1,13 @@
+facebook-button {
+    margin: auto;
+
+    .footer-text {
+        color: white;
+        font-size: 11px;
+    }
+
+    .md-button.md-default-theme.md-fab:not([disabled]):hover, .md-button.md-fab:not([disabled]):hover {
+        background-color: $dark-red;
+        cursor: default;
+    }
+}

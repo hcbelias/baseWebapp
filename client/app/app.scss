@@ -56,31 +56,47 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 @import '../components/contact/contact';
 
+@import '../components/facebook-button/facebook-button';
+
 @import '../components/footer/footer';
 
 @import '../components/toolbar/toolbar';
 
 /* endinject */
 
-.degrade {   
+.degrade {
     background-color: $dark-red;
     height: 10px;
     width: 100%;
     z-index: 999;
 }
 
-.img-responsive{
+.img-responsive {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-.content{
+.content {
     max-width: 1200px;
-    margin : auto;
-    width: 100%;    
+    margin: auto;
+    width: 100%;
 }
 
-.view-background{
+.view-background {
     background-color: rgba(40, 38, 39, 0.76);
+}
+
+.md-button.contact-icon {
+    background-color: $dark-red;
+}
+
+.footer-text {
+    color: $grey;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.md-button.contact-icon {
+    background-color: $dark-red;
 }
