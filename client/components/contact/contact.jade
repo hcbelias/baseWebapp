@@ -1,7 +1,7 @@
 md-card.content.card.md-whiteframe-20dp.contact-card
   md-toolbar
     md-toolbar-tools
-      span.md-headline Entre em contato conosco, ou se preferir, nos contate pelo facebook!
+      span.md-headline Entre em contato conosco
   md-card-content
     div(layout="column" layout-gt-xs="row" layout-align="center center")
       md-input-container
@@ -23,3 +23,5 @@ md-card.content.card.md-whiteframe-20dp.contact-card
   md-toolbar
     md-toolbar-tools
       span.md-headline Ou nos encontre no facebook! 
+      md-button.md-fab.footer-contact-icon(aria-label='Nos visite no Facebook' ng-click='$ctrl.openFacebook()')
+        img(ng-src='/assets/img/facebook-white.png', alt='Advocacia Terra Moreira')

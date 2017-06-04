@@ -1,28 +1,29 @@
 .contact-info {
-  .contact-info-icon {
-    background-color: #b52929;
-    border-radius: 50%;
-  }
 
-  .contact-info-icon-text {
-    color: white;
-    position: relative;
-  }
-
-  .contact-info-phone-text {
-    color: #575757;
-
-    .prefix {
-      font-style: italic;
-      padding-right: 4px;
-      font-size: 12px;
-      padding: 3px 2px;
+    .contact-info-icon-text {
+        color: white;
+        position: relative;
     }
 
-    .phone {
-      font-size: 18px;
-      font-weight: bold;
-      font-style: italic;
+    .contact-info-phone-text {
+        color: #575757;
+
+        .prefix {
+            font-style: italic;
+            padding-right: 4px;
+            font-size: 12px;
+            padding: 3px 2px;
+        }
+
+        .phone {
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+        }
     }
-  }
+
+    .md-button.md-default-theme.md-fab:not([disabled]):hover, .md-button.md-fab:not([disabled]):hover {
+        background-color: $dark-red;
+        cursor: default;
+    }
 }
