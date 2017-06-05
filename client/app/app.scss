@@ -66,7 +66,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 .degrade {
     background-color: $dark-red;
-    height: 10px;
+    height: 2px;
     width: 100%;
     z-index: 999;
 }
@@ -99,4 +99,9 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 .md-button.contact-icon {
     background-color: $dark-red;
+}
+
+.content-card {
+    background-color: #2a2627;
+    padding: 30px;
 }
