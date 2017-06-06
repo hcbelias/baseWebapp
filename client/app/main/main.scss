@@ -36,12 +36,14 @@ $screen-division: $large-and-up;
 
     .contact{
         background-color: $dark-red;
-        padding-top: $space-content;
+        padding: $space-content;
+        display: block;
     }
 
     .card-section{
         background-color: rgba(191, 190, 190, 0.61);
-        padding-top: $space-content;
+        padding: $space-content;
+
     }
 }
 

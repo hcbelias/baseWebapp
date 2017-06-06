@@ -3,25 +3,29 @@ md-card.content.card.md-whiteframe-20dp.contact-card.content-card
     md-toolbar-tools
       span.md-headline Fale Conosco
   .degrade(layout='row')
-  md-card-content
-    form(name='contactForm' layout='column' layout-align="center center")
-      div(layout='column' layout-gt-xs='row')
+  md-card-content(layout-align="center center" layout='row')
+    form(name='contactForm' layout='column' layout-align="start start")
+      div(layout='column' layout-gt-sm='row')
         md-input-container
           label(for='clientName') Nome
-          input(ng-model="$ctrl.name" required name='clientName')
+          input(ng-model="$ctrl.name" required name='clientName' md-no-asterisk)
           div(ng-messages='contactForm.clientName.$error')
-            div(ng-message='required') Preenchimento obrigatÛrio 
+            div(ng-message='required') Preenchimento obrigat√≥rio
         md-input-container
           label Telefone
-          input(ng-model="$ctrl.phone", type="phone" name='clientPhone')
+          input(ng-model="$ctrl.phone", type="phone" name='clientPhone' required md-no-asterisk)
           div(ng-messages='contactForm.clientPhone.$error')
-            div(ng-message='required') Preenchimento obrigatÛrio
-      div(layout='column' layout-gt-xs='row')
+            div(ng-message='required') Preenchimento obrigat√≥rio
         md-input-container
           label E-mail
-          input(ng-model="$ctrl.email", type="email")       
+          input(ng-model="$ctrl.email", type="email" name='clientEmail')
         md-input-container
-          label DescriÁ„o
-          textarea(ng-model="$ctrl.description" md-maxlength="300" md-minlength="10" required md-no-asterisk  md-select-on-focus)       
-    md-divider(layout='row' layout-align="center center")
-      facebook-button.dark
+          label Descri√ß√£o
+          textarea(ng-model="$ctrl.description" name='clientDescription' md-maxlength="400" md-minlength="10"  required md-no-asterisk  md-select-on-focus)
+          div(ng-messages='contactForm.clientDescription.$error')
+            div(ng-message='required') Preenchimento obrigat√≥rio
+            div(ng-message='md-minlength') Por favor, escreva uma pequena descri√ß√£o
+        md-input-container
+          md-button.send-button(type='submit') Enviar
+  .degrade(layout='row')
+  facebook-button(flex)
