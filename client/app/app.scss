@@ -105,3 +105,8 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     background-color: #2a2627;
     padding: 30px;
 }
+
+body, html{
+    height: 100%;
+    overflow: hidden;
+}

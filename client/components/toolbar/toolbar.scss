@@ -3,7 +3,8 @@ $toolbarBackgroundColor: black;
 
 .toolbar {
     z-index: 9999;
-    min-height: 56px;
+
+    display: block;
 
     .md-toolbar {
         background-color: $toolbarBackgroundColor;
