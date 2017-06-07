@@ -9,6 +9,7 @@ angular.module('webapp', [
     'validation.match',
     'ngMaterial',
     'ngMessages',
+    'ngAnimate'
 ])
   .config(function ($urlRouterProvider, $locationProvider, $mdThemingProvider) {
     $urlRouterProvider.otherwise('/');

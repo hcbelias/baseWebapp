@@ -7,6 +7,10 @@
 
     }
 
+    submitEmail() {
+      debugger;
+    }
+
   }
 
   angular.module('webapp')

@@ -4,7 +4,7 @@ md-card.content.card.md-whiteframe-20dp.contact-card.content-card
       span.md-headline Fale Conosco
   .degrade(layout='row')
   md-card-content(layout-align="center center" layout='row')
-    form(name='contactForm' layout='column' layout-align="start start")
+    form(name='contactForm' layout='column' layout-align="start start" ng-submit="$ctrl.sendEmail()")
       div(layout='column' layout-gt-sm='row')
         md-input-container
           label(for='clientName') Nome
@@ -19,13 +19,15 @@ md-card.content.card.md-whiteframe-20dp.contact-card.content-card
         md-input-container
           label E-mail
           input(ng-model="$ctrl.email", type="email" name='clientEmail')
+          div(ng-messages='contactForm.clientEmail.$error')
+            div(ng-message='pattern') Preenchimento obrigatório
         md-input-container
           label Descrição
-          textarea(ng-model="$ctrl.description" name='clientDescription' md-maxlength="400" md-minlength="10"  required md-no-asterisk  md-select-on-focus)
+          textarea(ng-model="$ctrl.description" name='clientDescription' md-maxlength="250" maxlength="250" minlength="5" md-minlength="5"   required md-no-asterisk  md-select-on-focus)
           div(ng-messages='contactForm.clientDescription.$error')
             div(ng-message='required') Preenchimento obrigatório
-            div(ng-message='md-minlength') Por favor, escreva uma pequena descrição
+            div(ng-message='minlength') Por favor, escreva uma pequena descrição
         md-input-container
-          md-button.send-button(type='submit') Enviar
+          md-button.send-button(type='submit' ng-disabled='contactForm.$invalid') Enviar
   .degrade(layout='row')
   facebook-button(flex)

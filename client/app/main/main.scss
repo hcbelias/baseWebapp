@@ -31,6 +31,11 @@ $screen-division: $large-and-up;
             background-color: $grey;
             color: white;
             padding-left: 20px;
+            min-height: 44px;
+        }
+
+        iframe{
+            width: 100%;
         }
     }
 
