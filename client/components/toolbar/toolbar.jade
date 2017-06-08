@@ -1,8 +1,8 @@
 md-toolbar.md-toolbar.md-whiteframe-12dp(md-scroll-shrink='')
-  .md-toolbar-tools.content(layout="row" layout-align="space-between center")
-    img.md-card-image(ng-src='{{$ctrl.image}}', alt='Advocacia Terra Moreira')
-    md-nav-bar.md-warn(flex='' md-selected-nav-item='currentNavItem', nav-bar-aria-label='navigation links' hide show-gt-sm='')
-      md-nav-item( ng-repeat='item in $ctrl.navbar' md-nav-click="goto('page1')", name='page1') {{item.title}}
+  .md-toolbar-tools.content(layout="row" layout-align="space-between center" )
+    img.md-card-image(ng-src='{{$ctrl.image}}', alt='Advocacia Terra Moreira' ng-click='$ctrl.redirectHomePage()')
+    md-nav-bar.md-warn(flex='' md-selected-nav-item='Home', nav-bar-aria-label='navigation links' hide show-gt-sm='')
+      md-nav-item( ng-repeat='item in $ctrl.navbar' md-nav-sref="{{item.state}}" name='{{item.title}}' ui-sref="{{item.state}}" ui-sref-active="active") {{item.title}}
     md-button
       i.inset.material-icons menu
   .degrade(layout='row')

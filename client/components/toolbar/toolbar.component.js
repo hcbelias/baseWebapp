@@ -4,31 +4,40 @@
 (function() {
   class ToolbarController {
 
-    constructor($mdSidenav, $stateParams) {
+    constructor($mdSidenav, $state) {
       this.title = 'Terra Moreira';
       this.toggleLeft = this.buildToggler('left');
       this.toggleRight = this.buildToggler('right');
       this.navbar = this.getNavbar();
-
+      this.state = $state;
       this.image = 'assets/img/cartao.jpg';
     }
 
     getNavbar() {
       return [
         {
-          title: 'Home'
+          title: 'Home',
+          state: 'main'
         },
         {
-          title: 'Áreas de Atuação'
+          title: 'Áreas de Atuação',
+
+          state: 'main'
         },
         {
-          title: 'Área do Cliente'
+          title: 'Área do Cliente',
+
+          state: 'main'
         },
         {
-          title: 'Dicionário Jurídico'
+          title: 'Dicionário Jurídico',
+
+          state: 'main'
         },
         {
-          title: 'Contato'
+          title: 'Contato',
+
+          state: 'main'
         },
       ];
     }
@@ -38,6 +47,11 @@
         this.mdSidenav(componentId).toggle();
       };
     }
+
+    redirectHomePage() {
+      if(this.state.current.name !== 'main'){
+        this.state.go('main')
+      }
 
 
 

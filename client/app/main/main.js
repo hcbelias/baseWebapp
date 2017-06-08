@@ -4,7 +4,7 @@ angular.module('webapp')
   .config(function($stateProvider) {
     $stateProvider
       .state('main', {
-        url: '/?q',
+        url: '/',
         template: '<main layout="column" flex class="home-page"></main>',
       });
   });
