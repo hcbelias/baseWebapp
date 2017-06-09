@@ -14,30 +14,27 @@
     }
 
     getNavbar() {
+      this.currentNavItem = 'Home';
       return [
         {
           title: 'Home',
           state: 'main'
         },
-        {
-          title: 'Áreas de Atuação',
-
-          state: 'main'
-        },
-        {
-          title: 'Área do Cliente',
-
-          state: 'main'
-        },
-        {
-          title: 'Dicionário Jurídico',
-
-          state: 'main'
-        },
+        //{
+        //  title: 'Áreas de Atuação',
+        //  state: 'main'
+        //},
+        //{
+        //  title: 'Área do Cliente',
+        //  state: 'main'
+        //},
+        //{
+        //  title: 'Dicionário Jurídico',
+        //  state: 'main'
+        //},
         {
           title: 'Contato',
-
-          state: 'main'
+          state: 'message'
         },
       ];
     }
@@ -49,10 +46,8 @@
     }
 
     redirectHomePage() {
-      if(this.state.current.name !== 'main'){
-        this.state.go('main')
-      }
-
+      this.state.go('main');
+    }
 
 
   }

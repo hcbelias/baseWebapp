@@ -52,6 +52,8 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 @import 'main/main';
 
+@import 'message/message';
+
 @import '../components/contact-info/contact-info';
 
 @import '../components/contact/contact';
@@ -100,7 +102,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     padding: 30px;
 }
 
-body, html{
+body, html {
     height: 100%;
     overflow: hidden;
 }

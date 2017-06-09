@@ -18,9 +18,4 @@ angular.module('webapp', [
       .primaryPalette('grey')
       .warnPalette('deep-orange')
       .accentPalette('red').dark();
-
-    $mdThemingProvider.theme('docs-dark')
-     .primaryPalette('yellow')
-     .dark();
-
   });

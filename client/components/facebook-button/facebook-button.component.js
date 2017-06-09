@@ -8,7 +8,7 @@
 
     }
     openFacebook() {
-      this.window.open("https://www.facebook.com/advterramoreira/", "_blank");
+      this.window.open('https://www.facebook.com/advterramoreira/', '_blank');
     }
 
   }

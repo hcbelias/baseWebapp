@@ -1,8 +1,10 @@
 md-toolbar.md-toolbar.md-whiteframe-12dp(md-scroll-shrink='')
-  .md-toolbar-tools.content(layout="row" layout-align="space-between center" )
+  .md-toolbar-tools.content(layout='row' layout-align='space-between center' )
     img.md-card-image(ng-src='{{$ctrl.image}}', alt='Advocacia Terra Moreira' ng-click='$ctrl.redirectHomePage()')
-    md-nav-bar.md-warn(flex='' md-selected-nav-item='Home', nav-bar-aria-label='navigation links' hide show-gt-sm='')
-      md-nav-item( ng-repeat='item in $ctrl.navbar' md-nav-sref="{{item.state}}" name='{{item.title}}' ui-sref="{{item.state}}" ui-sref-active="active") {{item.title}}
-    md-button
-      i.inset.material-icons menu
+    md-nav-bar(flex='' md-selected-nav-item='$ctrl.currentNavItem', nav-bar-aria-label='navigation links' hide show-gt-sm='')
+      md-nav-item( ng-repeat='item in $ctrl.navbar' md-nav-sref="{{item.state}}" name='{{item.title}}' ) {{item.title}}
+    div(hide-gt-sm='' layout='row' flex='' layout-align='space-between center')
+      span.mobile-title(flex) ADVOCACIA TERRA MOREIRA
+      md-button
+        i.inset.material-icons menu     
   .degrade(layout='row')
