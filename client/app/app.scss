@@ -50,6 +50,8 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 /* inject:scss */
 
+@import 'dicionario/dicionario';
+
 @import 'main/main';
 
 @import 'message/message';
@@ -105,4 +107,5 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 body, html {
     height: 100%;
     overflow: hidden;
+    background-color: black;
 }

@@ -6,11 +6,11 @@
 
     constructor($mdSidenav, $state) {
       this.title = 'Terra Moreira';
-      this.toggleLeft = this.buildToggler('left');
-      this.toggleRight = this.buildToggler('right');
+      this.toggleSidenav = this.buildToggler('sidenav');
       this.navbar = this.getNavbar();
       this.state = $state;
       this.image = 'assets/img/cartao.jpg';
+      this.mdSidenav = $mdSidenav;
     }
 
     getNavbar() {
@@ -28,10 +28,10 @@
         //  title: 'Área do Cliente',
         //  state: 'main'
         //},
-        //{
-        //  title: 'Dicionário Jurídico',
-        //  state: 'main'
-        //},
+        {
+          title: 'Dicionário Jurídico',
+          state: 'dicionario'
+        },
         {
           title: 'Contato',
           state: 'message'

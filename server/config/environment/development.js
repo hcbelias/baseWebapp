@@ -8,5 +8,8 @@ module.exports = {
   mongo: {
     uri: 'mongodb://192.168.1.2:27017/webapp-staging'
   },
+  email: {
+    host: 'smtp.'
+  }
 
 };
