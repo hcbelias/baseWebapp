@@ -12,7 +12,7 @@ angular.module('webapp', [
     'ngAnimate'
 ])
   .config(function ($urlRouterProvider, $locationProvider, $mdThemingProvider) {
-    $urlRouterProvider.otherwise('/#');
+    $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
     $mdThemingProvider.theme('default')
       .primaryPalette('grey')

@@ -4,7 +4,7 @@ var path = require('path');
 var _ = require('lodash');
 
 function requiredProcessEnv(name) {
-  if (!process.env[name]) {
+  if(!process.env[name]) {
     throw new Error('You must set the ' + name + ' environment variable');
   }
   return process.env[name];
@@ -39,10 +39,21 @@ var all = {
   },
 
   google: {
-    clientID:     process.env.GOOGLE_ID || '223526487816-dr94mhnc90652cvm2fl00i892gctjppk.apps.googleusercontent.com',
+    clientID: process.env.GOOGLE_ID || '223526487816-dr94mhnc90652cvm2fl00i892gctjppk.apps.googleusercontent.com',
     clientSecret: process.env.GOOGLE_SECRET || 'JyJ2b8eGhrnJbPwmXj4pB6iN',
-    callbackURL:  (process.env.DOMAIN || '') + '/auth/google/callback'
+    callbackURL: (process.env.DOMAIN || '') + '/auth/google/callback'
   },
+  email: {
+    host: 'smtp.google.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+    destination: ['admin@terramoreira.com', 'regilene.terra@terramoreira.com', 'silas.moreira@terramoreia.com']
+  }
+
 };
 
 // Export the config object based on the NODE_ENV

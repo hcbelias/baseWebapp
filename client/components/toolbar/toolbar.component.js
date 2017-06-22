@@ -7,14 +7,14 @@
     constructor($mdSidenav, $state) {
       this.title = 'Terra Moreira';
       this.toggleSidenav = this.buildToggler('sidenav');
-      this.navbar = this.getNavbar();
+      this.navbar = this.getNavbar($state);
       this.state = $state;
       this.image = 'assets/img/cartao.jpg';
       this.mdSidenav = $mdSidenav;
     }
 
-    getNavbar() {
-      this.currentNavItem = 'Home';
+    getNavbar(state) {
+      this.currentNavItem = state.current.name;
       return [
         {
           title: 'Home',
