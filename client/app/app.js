@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('webapp', [
+    'webapp.auth',
     'webapp.constants',
     'ngCookies',
     'ngResource',
@@ -13,7 +14,7 @@ angular.module('webapp', [
 ])
   .config(function ($urlRouterProvider, $locationProvider, $mdThemingProvider) {
     $urlRouterProvider.otherwise('/');
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
     $mdThemingProvider.theme('default')
       .primaryPalette('grey')
       .warnPalette('deep-orange')

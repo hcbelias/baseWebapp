@@ -3,8 +3,9 @@
 (function() {
   class ContactController {
 
-    constructor($http, $resource) {
+    constructor($http, $resource, $q) {
       this.http = $http;
+      this.q = $q;
       this.resource = $resource;
       this.formData = {
         name: 'henrique',
@@ -19,25 +20,50 @@
         return;
       }
 
-      const EmailService = this.resource('/email');
-      let email = new EmailService(this.formData);
+      const EmailService = this.resource('/api/emails', {},
+          {
+            sendEmail: {
+              method: 'POST'
+            }
+          }
+      );
+
       this.isSubmitted = true;
-      debugger;
-      email.$save().then((response) => {
-        this.message = response.status;
-        this.data = response.data;
-        this.formData = {};
-        console.log(response);
-      }, (response) => {
-        console.log('err');
-        console.log(response);
-        this.data = response.data || 'Request failed';
-        this.status = response.status;
+debugger;
+var deferred = this.q.defer();
+ var data = JSON.stringify(this.formData);
+
+ this.http({
+   method: 'POST',
+   url: 'http://localhost:9000/api/emails',
+   data: this.formData,
+   headers: {
+     'Content-Type': 'application/json',
+     'Method': 'POST'
+   }
+ }).then(function(response) {
+   console.log(response)
+ });
+
+ this.http.post('http://localhost:9000/api/emails', data)
+     .then(function(response) {
+       debugger;
+         if (typeof response.data === 'object') {
+             deferred.resolve(response.data);
+         } else {
+             deferred.reject(response.data);
+         }
+      })
+      .catch(function(response) {
+        debugger;
+         return deferred.reject(response.data);
       });
 
-    }
+return deferred.promise;
+
 
   }
+}
 
   angular.module('webapp')
     .component('contact', {

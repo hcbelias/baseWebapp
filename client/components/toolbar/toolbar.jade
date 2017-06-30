@@ -2,11 +2,11 @@ md-toolbar.md-toolbar.md-whiteframe-12dp(md-scroll-shrink='')
   .md-toolbar-tools.content(layout='row' layout-align='space-between center' )
     img.md-card-image(ng-src='{{$ctrl.image}}', alt='Advocacia Terra Moreira' ng-click='$ctrl.redirectHomePage()')
     md-nav-bar(flex='' md-selected-nav-item='$ctrl.currentNavItem', nav-bar-aria-label='navigation links' hide show-gt-sm='')
-      md-nav-item( ng-repeat='item in $ctrl.navbar' md-nav-sref="{{item.state}}" name='{{item.state}}' ) {{item.title}}
+      md-nav-item( ng-repeat='item in $ctrl.navbar' md-nav-sref="{{item.state}}" ui-sref="{{item.state}}" name='{{item.state}}' ) {{item.title}}
     div(hide-gt-sm='' layout='row' flex='' layout-align='space-between center')
       span.mobile-title(flex) ADVOCACIA TERRA MOREIRA
       md-button(ng-click='$ctrl.toggleSidenav()')
-        i.inset.material-icons menu     
+        i.inset.material-icons menu
   .degrade(layout='row')
 md-sidenav.md-sidenav-left.md-whiteframe-z20(md-component-id='sidenav')
   md-toolbar.md-theme-light

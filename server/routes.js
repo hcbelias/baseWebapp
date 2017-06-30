@@ -4,25 +4,25 @@
 
 'use strict';
 
-import errors from './components/errors';
-import email from './components/email';
 import path from 'path';
-
+import nodemailer from 'nodemailer';
+console.log('load');
 export default function(app, config) {
+  console.log('load2');
   // All undefined asset or api routes should return a 404
-  app.route('/email').post(function(req, res){
-
+  app.route('/api/emails').post(function(req, res){
+    console.log('sadasdsa');
     debugger;
-    email.sendEmail(req,res);
+//    email.sendEmail(req,res);
   });
 
   // All undefined asset or api routes should return a 404
-  app.route('/:url(api|auth|components|app|bower_components|assets)/*')
-   .get(errors[404]);
+
 
   // All other routes should redirect to the index.html
   app.route('/*')
     .get((req, res) => {
+      console.log('sadas');
       res.sendFile(path.resolve(app.get('appPath') + '/index.html'));
     });
 }
